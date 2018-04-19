@@ -14,11 +14,11 @@ The code will look like the following:
 pragma solidity ^0.4.17;
 contract First {
         int public mydata;
-        function GetDouble(int _data) public returns (int _output)          {
+        function GetDouble(int _data) public returns (int _output) {
                    mydata = _data * 2;
                    return _data * 2;
-          }
-     }
+         }
+    }
 ```
 
 This book assumes a basic level knowledge of programming. It is ideal to have some background on any scripting language. All you need is an internet connectivity and a browser for using a majority of this book. There are sections that will need creating a machine to deploy blockchain specific tools and utilities. This machine can be physical or virtual, on cloud or on-premise.

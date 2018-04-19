@@ -1,0 +1,35 @@
+
+
+
+pragma solidity 0.4.19;
+
+contract AllAboutInts {
+
+      
+    uint  stateUInt = 20; //state variable
+    uint  stateInt = 20; //state variable
+    
+    function getUInt(uint incomingValue) 
+    {
+        uint memoryuint = 256;
+        uint256 memoryuint256 = 256;
+        uint8 memoruint8 = 8; //can store value from 0 upto 255
+        
+        //addition of two uint8
+        uint256 result = memoruint8 + memoryuint;
+    
+    }
+    
+    function getInt(int incomingValue) 
+    {
+        int memoryInt = 256;
+        int256 memoryInt256 = 256;
+        int8 memoryInt8 = 8; //can store value from -128 to 127
+    }
+    
+}
+
+
+
+
+

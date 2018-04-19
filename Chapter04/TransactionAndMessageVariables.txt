@@ -1,0 +1,56 @@
+
+
+pragma solidity ^0.4.19;
+
+contract TransactionAndMessageVariables {
+    
+    event logstring(string);
+    event loguint(uint);
+    event logbytes(bytes);
+    event logaddress(address);
+    event logbyte4(bytes4);
+    event logblock(bytes32);
+    
+    function globalVariable() payable {
+        
+       logaddress( block.coinbase ); // 0x94d76e24f818426ae84aa404140e8d5f60e10e7e
+       
+       loguint( block.difficulty ); //71762765929000
+       
+       loguint( block.gaslimit ); // 6000000
+       
+       loguint(  msg.gas ); //2975428
+       
+       loguint(  tx.gasprice ); // 1
+       
+       loguint(  block.number ); //123
+       
+       loguint( block.timestamp ); //1513061946 
+       
+       loguint( now ); //1513061946
+       
+       logbytes( msg.data ); // 0x4048d797
+       
+       logbyte4(   msg.sig  ); // // 0x4048d797
+        
+       loguint( msg.value ); // 0 or in Wei if ether are send
+        
+       logaddress( msg.sender ); //0xca35b7d915458ef540ade6068dfe2f44e8fa733c"
+       
+       logaddress( tx.origin ); // 0xca35b7d915458ef540ade6068dfe2f44e8fa733c"
+
+       logblock ( block.blockhash( block.number) ); //0x00000000000000000000000
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
